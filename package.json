@@ -1,0 +1,11 @@
+{
+  "name": "session-alive",
+  "version": "2.4.0",
+  "description": "Keep your Session Alive at any website and never get logged out...",
+  "scripts": {
+    "build": "node build.js"
+  },
+  "devDependencies": {
+    "archiver": "^7.0.0"
+  }
+}

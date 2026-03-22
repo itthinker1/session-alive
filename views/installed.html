@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" data-bs-theme="light">
+<html lang="zh-CN" data-bs-theme="light">
 
 <head>
     <meta charset="UTF-8">
@@ -129,19 +129,19 @@
             <div class="ms-auto d-flex align-items-center">
                 <div class="form-check form-switch">
                     <input class="form-check-input" type="checkbox" id="themeSwitch">
-                    <label class="form-check-label text-white" for="themeSwitch">Dark Mode</label>
+                    <label class="form-check-label text-white" for="themeSwitch">深色模式</label>
                 </div>
             </div>
         </div>
     </nav>
     <!-- Sidebar -->
     <div class="sidebar">
-        <h5>Help Topics</h5>
+        <h5>帮助主题</h5>
         <div id="helpNav">
-            <div class="nav-item" data-section="quick-start">Quick Start</div>
-            <div class="nav-item" data-section="how-to-use">How to use</div>
-            <div class="nav-item" data-section="release-notes">Release Notes</div>
-            <div class="nav-item" data-section="about">About this extension</div>
+            <div class="nav-item" data-section="quick-start">快速开始</div>
+            <div class="nav-item" data-section="how-to-use">使用方法</div>
+            <div class="nav-item" data-section="release-notes">发布说明</div>
+            <div class="nav-item" data-section="about">关于此扩展</div>
         </div>
     </div>
 
@@ -152,58 +152,54 @@
                 <!-- Help Content -->
                 <div class="col-lg-8">
                     <section class="section">
-                        <h2>Session Alive Installed</h2>
-                        <p class="lead">Thanks for installing Session Alive extension! Create a rule to keep your Session Alive!</p>
+                        <h2>Session Alive 已安装</h2>
+                        <p class="lead">感谢安装 Session Alive 扩展！创建规则以保持您的会话活跃！</p>
                     </section>
 
                     <section id="quick-start" class="section">
-                        <h2>Quick Start</h2>
+                        <h2>快速开始</h2>
                         <ol>
-                            <li>Sign-in to your website to navigate to the Dashboard/Welcome Page</li>
-                            <li>Click the Session Alive extension icon <img id="icon" src="../assets/icon/icon.svg" width="16px" height="16px"> in browser toolbar or extension menu or overflow menu.</li>
-                            <li style="line-height: 2rem">Click the <button class="btn btn-primary btn-sm m-1" data-translate="addRuleCurrentPageHeading">+ Add a Rule for this page</button> button.</li>
-                            <li>Page is reloaded and Your session is now alive!</li>
+                            <li>登录您的网站并导航到仪表板/欢迎页面</li>
+                            <li>点击浏览器工具栏或扩展菜单或溢出菜单中的 Session Alive 扩展图标 <img id="icon" src="../assets/icon/icon.svg" width="16px" height="16px">。</li>
+                            <li style="line-height: 2rem">点击 <button class="btn btn-primary btn-sm m-1" data-translate="addRuleCurrentPageHeading">+ Add a Rule for this page</button> 按钮。</li>
+                            <li>页面重新加载，您的会话现已活跃！</li>
                         </ol>
                     </section>
 
                     <section id="how-to-use" class="section">
-                        <h2>How to use</h2>
+                        <h2>使用方法</h2>
                         <ol>
-                            <li>Sign-in to your website and Copy Dashboard/Welcome URL</li>
-                            <li style="line-height: 2rem">You can click the <button class="btn btn-primary btn-sm m-1" data-translate="addRuleCurrentPageHeading">+ Add a Rule for this page</button> button to quickly create a rule.</li>
-                            <li style="line-height: 2rem">Click the <button class="btn btn-primary btn-sm" data-translate="settingsHeading">Settings</button> to manage the rules.</li>
-                            <li style="line-height: 2rem">Click the <button class="btn btn-primary btn-sm"><span style="font-size: 24px;line-height: 16px;">+</span> Add New Rule</button> button to add a New Rule and paste the copied URL to <span style="cursor: help; border-bottom: 1px dotted var(--text-color);" title="The Background Request Rule is used to keep the session alive by requesting a page in the background.">Background Request Options</span> &rarr; <span style="cursor: help; border-bottom: 1px dotted var(--text-color);" title="Navigating to this URL will start the background request loop.">Trigger URL</span></li>
-                            <li style="line-height: 2rem">Set the Request Interval as per your needs and click the <button class="btn btn-primary btn-sm" type="submit">Save Rule</button> button to save.</li>
-                            <li style="line-height: 3rem">Click the <span style="cursor: help; border-bottom: 1px dotted var(--text-color);" title="Navigating to this URL will start the background request loop.">Trigger URL</span> link in the Save Success message. <span class="alert alert-success">Navigate to <a id="trigger_uri_link" href="#" class="alert-link" target="_blank">Trigger URL <img class="bg-white" src="../assets/settings/Open.svg" width="14px" height="14px" style="height: 0.7em; vertical-align: top;"></a> to start the Rule.</span></li>
-                            <li>You can also Refresh the Dashboard/Welcome URL or Sign-in again</li>
-                            <li>Your session is now alive!</li>
+                            <li>登录您的网站并复制仪表板/欢迎 URL</li>
+                            <li style="line-height: 2rem">您可以点击 <button class="btn btn-primary btn-sm m-1" data-translate="addRuleCurrentPageHeading">+ Add a Rule for this page</button> 按钮来快速创建规则。</li>
+                            <li style="line-height: 2rem">点击 <button class="btn btn-primary btn-sm" data-translate="settingsHeading">Settings</button> 来管理规则。</li>
+                            <li style="line-height: 2rem">点击 <button class="btn btn-primary btn-sm"><span style="font-size: 24px;line-height: 16px;">+</span> Add New Rule</button> 按钮来添加新规则，将复制的 URL 粘贴到 <span style="cursor: help; border-bottom: 1px dotted var(--text-color);" title="The Background Request Rule is used to keep the session alive by requesting a page in the background.">Background Request Options</span> &rarr; <span style="cursor: help; border-bottom: 1px dotted var(--text-color);" title="Navigating to this URL will start the background request loop.">Trigger URL</span></li>
+                            <li style="line-height: 2rem">根据需要设置请求间隔，然后点击 <button class="btn btn-primary btn-sm" type="submit">Save Rule</button> 按钮保存。</li>
+                            <li style="line-height: 3rem">点击保存成功消息中的 <span style="cursor: help; border-bottom: 1px dotted var(--text-color);" title="Navigating to this URL will start the background request loop.">Trigger URL</span> 链接。<span class="alert alert-success">Navigate to <a id="trigger_uri_link" href="#" class="alert-link" target="_blank">Trigger URL <img class="bg-white" src="../assets/settings/Open.svg" width="14px" height="14px" style="height: 0.7em; vertical-align: top;"></a> to start the Rule.</span></li>
+                            <li>您也可以刷新仪表板/欢迎 URL 或再次登录</li>
+                            <li>您的会话现已活跃！</li>
                         </ol>
                     </section>
 
                     <section id="release-notes" class="section">
-                        <h2>Release Notes</h2>
-                        <h3>Version 2.4</h3>
-                        <span class="badge text-bg-secondary">Works with Firefox 57.0 and later, Chrome 88.0 and later, Android 57.0 and later</span>
+                        <h2>发布说明</h2>
+                        <h3>版本 2.4</h3>
+                        <span class="badge text-bg-secondary">适用于 Firefox 57.0 及更高版本、Chrome 88.0 及更高版本、Android 57.0 及更高版本</span>
                         <ul>
-                            <li><strong>New Feature:</strong> Dark Theme - Automatically adapts to your
-                                system's appearance settings. </li>
-                            <li><strong>Improvement:</strong> Automatically generates rule name based on
-                                the page title.</li>
-                            <li><strong>Upgrade:</strong> Bootstrap updated to the latest version. </li>
-                            <li><strong>Improvement:</strong> Improved overall performance. </li>
-                            <li><strong>Improvement:</strong> Add Swedish (sv) language. Thank you 
-                                <a href="https://github.com/Sopor" target="_blank" class="text-info">Sopor</a> for your 
-                                <a href="https://github.com/arunelias/session-alive/pull/44" target="_blank" class="text-info">support.</a> </li>
+                            <li><strong>新功能：</strong> 深色主题 - 自动适应您的系统外观设置。</li>
+                            <li><strong>改进：</strong> 根据页面标题自动生成规则名称。</li>
+                            <li><strong>升级：</strong> Bootstrap 已更新到最新版本。</li>
+                            <li><strong>改进：</strong> 提高了整体性能。</li>
+                            <li><strong>改进：</strong> 添加瑞典语 (sv) 支持。感谢 <a href="https://github.com/Sopor" target="_blank" class="text-info">Sopor</a> 的<a href="https://github.com/arunelias/session-alive/pull/44" target="_blank" class="text-info">支持。</a></li>
                         </ul>
                     </section>
 
                     <section id="about" class="section">
-                        <h2>About this extension</h2>
+                        <h2>关于此扩展</h2>
                         <ul class="list-group list-group-flush">
-                            <li class="list-group-item">Session Alive extension is Open Source. Please <a href="https://chromewebstore.google.com/detail/session-alive/aodfoiacnmepndhojccepdcpmehjbham/reviews">rate</a> the extension if you like it.</li>
-                            <li class="list-group-item">This extension does not collect any user information or data. Please read the <a href="https://chromewebstore.google.com/detail/session-alive/aodfoiacnmepndhojccepdcpmehjbham/privacy">Privacy Policy</a> for more details.</li>
-                            <li class="list-group-item">If you want to contribute to this project or report an issue please visit the <a href="https://github.com/arunelias/session-alive">GitHub page</a>.</li>
-                            <li class="list-group-item">Help me improve the Session Alive extension by leaving feedback <a href="https://docs.google.com/forms/d/e/1FAIpQLSf9gdcJycSTzriZZDWDKcW3JKd8h0dSkO8guvx1LRSAF2LzDQ/viewform?usp=sf_link">here</a>.</li>
+                            <li class="list-group-item">Session Alive 扩展是开源的。如果您喜欢它，请<a href="https://chromewebstore.google.com/detail/session-alive/aodfoiacnmepndhojccepdcpmehjbham/reviews">评分</a>。</li>
+                            <li class="list-group-item">此扩展不会收集任何用户信息或数据。请阅读 <a href="https://chromewebstore.google.com/detail/session-alive/aodfoiacnmepndhojccepdcpmehjbham/privacy">隐私政策</a> 了解更多详情。</li>
+                            <li class="list-group-item">如果您想为此项目做出贡献或报告问题，请访问 <a href="https://github.com/arunelias/session-alive">GitHub 页面</a>。</li>
+                            <li class="list-group-item">帮助我改进 Session Alive 扩展，请在此处<a href="https://docs.google.com/forms/d/e/1FAIpQLSf9gdcJycSTzriZZDWDKcW3JKd8h0dSkO8guvx1LRSAF2LzDQ/viewform?usp=sf_link">留下反馈</a>。</li>
                         </ul>
                     </section>
                 </div>
@@ -212,17 +208,17 @@
                 <div class="col-lg-4">
                     <div class="card info-card">
                         <div class="card-body">
-                            <h5 class="card-title">Quick Tips</h5>
+                            <h5 class="card-title">快速提示</h5>
                             <p class="card-text">
-                                Manage your rules to keep your Session Alive!:
+                                管理您的规则以保持您的会话活跃！：
                             </p>
                             <ul>
-                                <li><strong>Rule Name</strong>: Enter a descriptive name to identify your rule.</li>
-                                <li><strong>Trigger URL</strong>: When visited, this URL starts the background request process.</li>
-                                <li><strong>Request Interval</strong>: Specify how often background requests should be made.</li>
+                                <li><strong>规则名称</strong>：输入一个描述性名称来标识您的规则。</li>
+                                <li><strong>触发 URL</strong>：访问此 URL 时，将启动后台请求过程。</li>
+                                <li><strong>请求间隔</strong>：指定后台请求的频率。</li>
                             </ul>
                             <p>
-                                For more help, visit the <a href="https://github.com/arunelias/session-alive?tab=readme-ov-file#main-view-information-pop-up" class="card-link text-info" title="Support Site">GitHub</a> page.
+                                如需更多帮助，请访问 <a href="https://github.com/arunelias/session-alive?tab=readme-ov-file#main-view-information-pop-up" class="card-link text-info" title="Support Site">GitHub</a> 页面。
                             </p>
                         </div>
                     </div>

@@ -131,7 +131,7 @@ background.js → cs.js handleResponse() → 执行规则
 - 翻译文件位于 `_locales/{语言代码}/messages.json`
 - 使用 `chrome.i18n.getMessage()` 获取翻译
 - 所有 UI 文本都支持本地化
-- 当前支持语言：en, de, es, fr, nl, sv
+- 当前支持语言：en, de, es, fr, nl, sv, zh
 
 ### 主题支持
 
@@ -172,6 +172,16 @@ background.js → cs.js handleResponse() → 执行规则
 ```
 
 ## 常见任务
+
+### 构建扩展包
+
+打包扩展为 ZIP 文件用于发布或测试：
+
+```bash
+npm run build
+```
+
+这将生成 `session-alive-v{version}-{timestamp}.zip` 文件（保存在 `dist/` 目录），包含所有扩展文件，排除开发相关文件（.git、node_modules 等）。
 
 ### 添加新翻译
 
