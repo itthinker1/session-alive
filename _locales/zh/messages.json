@@ -1,0 +1,94 @@
+{
+  "extensionName": {
+    "message": "Session Alive",
+    "description": "扩展名称。"
+  },
+  "extensionDescription": {
+    "message": "在任何网站上保持会话活跃，不再被自动登出...",
+    "description": "扩展描述。"
+  },
+  "settingsHeading": {
+    "message": "设置",
+    "description": "设置标题。"
+  },
+  "addRuleCurrentPageHeading": {
+    "message": "+ 为此页面添加规则",
+    "description": "为当前页面添加规则按钮文本"
+  },
+  "noRunningRulesInfo": {
+    "message": "没有运行的规则！您可以在设置页面管理规则。",
+    "description": "无规则运行时的提示信息。"
+  },
+  "aliveDivTitle": {
+    "message": "计划页面重载以保持会话活跃！",
+    "description": "内容脚本 Alive Div 工具提示。"
+  },
+  "aliveDivContent": {
+    "message": "点击推迟页面重载 1 分钟",
+    "description": "内容脚本 Alive Div 鼠标悬停信息。"
+  },
+  "addRuleSuccessTitle": {
+    "message": "添加规则",
+    "description": "从弹窗添加规则成功时的通知标题。"
+  },
+  "addRuleSuccessMessage": {
+    "message": "规则保存成功！",
+    "description": "从弹窗添加规则成功时的通知消息"
+  },
+  "addRuleDupErrorTitle": {
+    "message": "添加规则",
+    "description": "从弹窗添加规则时重复 URL 错误的通知标题。"
+  },
+  "addRuleDupErrorMessage": {
+    "message": "当前 URL 已在其他规则中使用！请先禁用或删除该规则。",
+    "description": "从弹窗添加规则时重复 URL 错误的通知消息"
+  },
+  "addRuleInvErrorTitle": {
+    "message": "添加规则",
+    "description": "从弹窗添加规则时无效 URL 错误的通知标题。"
+  },
+  "addRuleInvErrorMessage": {
+    "message": "无法创建规则！当前 URL 无效。",
+    "description": "从弹窗添加规则时无效 URL 错误的通知消息"
+  },
+  "fgRuleSuccessTitle": {
+    "message": "页面自动重载规则：",
+    "description": "前台规则运行成功的通知标题"
+  },
+  "fgRuleSuccessMessage": {
+    "message": "页面正在重载以保持会话活跃！",
+    "description": "前台规则运行成功的通知消息"
+  },
+  "bgRuleSuccessTitle": {
+    "message": "后台请求规则：",
+    "description": "后台规则运行成功的通知标题"
+  },
+  "bgRuleSuccessMessage": {
+    "message": "保持会话活跃的后台请求成功！",
+    "description": "后台规则运行成功的通知消息"
+  },
+  "fgRuleStoppedTitle": {
+    "message": "页面自动重载规则：",
+    "description": "前台规则停止的通知标题"
+  },
+  "fgRuleStoppedMessage": {
+    "message": "前台页面自动重载规则已停止！",
+    "description": "前台规则停止的通知消息"
+  },
+  "bgRuleStoppedTitle": {
+    "message": "后台请求规则：",
+    "description": "后台规则停止的通知标题"
+  },
+  "bgRuleStoppedMessage": {
+    "message": "后台请求规则已停止！服务器响应不是 200 OK！",
+    "description": "后台规则停止的通知消息"
+  },
+  "aliveInstalledTitle": {
+    "message": "Session Alive 已安装",
+    "description": "Session Alive 安装通知标题"
+  },
+  "aliveInstalledMessage": {
+    "message": "感谢安装 Session Alive 扩展！创建规则以保持您的会话活跃！",
+    "description": "Session Alive 安装通知消息"
+  }
+}

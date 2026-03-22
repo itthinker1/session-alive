@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="../assets/icon/icon.png">
-    <title>Session Alive Settings</title>
+    <title>Session Alive 设置</title>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="../assets/bootstrap/bootstrap.min.css">
     <!-- Custom CSS -->
@@ -23,16 +23,16 @@
             <div class="ms-auto d-flex align-items-center">
                 <div class="form-check form-switch">
                     <input class="form-check-input" type="checkbox" id="themeSwitch">
-                    <label class="form-check-label text-white" for="themeSwitch">Dark Mode</label>
+                    <label class="form-check-label text-white" for="themeSwitch">深色模式</label>
                 </div>
             </div>
         </div>
     </nav>
     <!-- Sidebar -->
     <div class="sidebar">
-        <h5>Existing Rules</h5>
+        <h5>现有规则</h5>
         <div id="rulesList">
-            <div class="rule-item">Rule 1</div>
+            <div class="rule-item">规则 1</div>
         </div>
     </div>
     <!-- Main Content -->
@@ -41,58 +41,58 @@
             <div class="row">
                 <!-- Rule Management -->
                 <div class="col-lg-8">
-                    <h2 class="mb-4">Manage Rules</h2>
+                    <h2 class="mb-4">管理规则</h2>
                     <div id="alertContainer"></div>
                     <div class="alert alert-info d-none" id="save-success-next-step">
-                        <span class="badge rounded-pill text-bg-success">Next Step:</span>
-                        Navigate to the
-                        <a id="trigger_uri_link" href="#" class="alert-link" target="_blank">Trigger URL
+                        <span class="badge rounded-pill text-bg-success">下一步：</span>
+                        导航到
+                        <a id="trigger_uri_link" href="#" class="alert-link" target="_blank">触发 URL
                             <img class="bg-white" src="../assets/settings/Open.svg" width="14px" height="14px" style="height: 0.7em; vertical-align: top;"></a>
-                        to start the Rule.
+                        以启动规则。
                     </div>
-                    <button class="btn btn-primary mb-4" id="addNewRuleButton">Add New Rule</button>
+                    <button class="btn btn-primary mb-4" id="addNewRuleButton">添加新规则</button>
                     <!-- Help Card -->
                     <div class="card info-card mb-2" id="helpCard">
                         <div class="card-body">
-                            <h5 class="card-title">Help & Info</h5>
+                            <h5 class="card-title">帮助与信息</h5>
                             <p class="card-text">
-                                Manage your rules to keep your Session Alive!:
+                                管理您的规则以保持会话活跃！
                             </p>
                             <ul>
-                                <li><strong>Rule Name</strong>: Enter a descriptive name to identify your rule.</li>
-                                <li><strong>Trigger URL</strong>: When visited, this URL starts the background request process.</li>
-                                <li><strong>Request Interval</strong>: Specify how often background requests should be made.</li>
+                                <li><strong>规则名称</strong>：输入描述性名称来标识您的规则。</li>
+                                <li><strong>触发 URL</strong>：访问此 URL 时将启动后台请求过程。</li>
+                                <li><strong>请求间隔</strong>：指定后台请求的频率。</li>
                             </ul>
                             <p>
-                                Click a rule in the sidebar to edit or delete it, or use the "Add New Rule" button to create a new one.
+                                点击侧边栏中的规则进行编辑或删除，或使用"添加新规则"按钮创建新规则。
                             </p>
                         </div>
                     </div>
                     <!-- Rule Add/ Edit form -->
                     <div class="card mb-2 d-none" id="ruleFormCard">
                         <div class="card-body">
-                            <h5 class="card-title" id="formTitle">Add New Rule</h5>
+                            <h5 class="card-title" id="formTitle">添加新规则</h5>
                             <form id="ruleForm" class="needs-validation" novalidate="">
                                 <div class="accordion mb-2" id="accordionRuleDetails">
                                     <div class="accordion-item">
                                         <div class="accordion-header">
                                             <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                                Rule Details
+                                                规则详情
                                             </button>
                                         </div>
                                         <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionRuleDetails">
                                             <div class="accordion-body">
                                                 <input type="hidden" class="form-control" id="rule_id">
-                                                <label for="rule_name" class="mb-0">Rule Name:</label>
-                                                <input type="text" class="form-control" id="rule_name" required="required" placeholder="Rule Name" maxlength="30">
-                                                <div class="invalid-feedback">Valid rule name is required.</div>
-                                                <div class="text-secondary small">Give a short name for the Rule.</div>
+                                                <label for="rule_name" class="mb-0">规则名称：</label>
+                                                <input type="text" class="form-control" id="rule_name" required="required" placeholder="规则名称" maxlength="30">
+                                                <div class="invalid-feedback">有效的规则名称是必需的。</div>
+                                                <div class="text-secondary small">为规则起一个简短的名称。</div>
                                                 <div class="input-group pt-3 mb-0">
                                                     <div class="input-group-text">
                                                         <input type="checkbox" id="disable_rule">
                                                     </div>
                                                     <div class="form-control input-group-text">
-                                                        <div class="text-danger"> Disable the Rule.</div>
+                                                        <div class="text-danger"> 禁用规则。</div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -103,52 +103,46 @@
                                     <div class="accordion-item">
                                         <div class="accordion-header">
                                             <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
-                                                Background Request Options
+                                                后台请求选项
                                             </button>
                                         </div>
                                         <div id="collapseTwo" class="accordion-collapse collapse show" data-bs-parent="#accordionBackground">
                                             <div class="accordion-body">
-                                                <label for="trigger_uri" class="mb-0">Trigger URL: <span class="badge rounded-pill text-bg-info">asterisk (*) wildcard is
-                                                        supported</span></label>
-                                                <input type="text" class="form-control" id="trigger_uri" placeholder="Trigger URL. eg: https://myapp.com/welcome" required="required" pattern="(https?://.+).{3,}">
-                                                <div id="trigger_uri_fb" class="invalid-feedback">Valid trigger URL
-                                                    (including "http://" or "https://") is required.</div>
-                                                <div class="text-secondary small">Navigating to this URL will start the
-                                                    background request loop.</div>
+                                                <label for="trigger_uri" class="mb-0">触发 URL： <span class="badge rounded-pill text-bg-info">支持星号 (*) 通配符</span></label>
+                                                <input type="text" class="form-control" id="trigger_uri" placeholder="触发 URL。例如：https://myapp.com/welcome" required="required" pattern="(https?://.+).{3,}">
+                                                <div id="trigger_uri_fb" class="invalid-feedback">有效的触发 URL
+                                                    （包含 "http://" 或 "https://"）是必需的。</div>
+                                                <div class="text-secondary small">导航到此 URL 将启动
+                                                    后台请求循环。</div>
 
-                                                <label for="loop_uri" class="pt-3 mb-0">Background Request URL: <span class="badge rounded-pill text-bg-info">Optional</span></label>
-                                                <input type="url" class="form-control" id="loop_uri" placeholder="Optional Background Request URL. eg: https://myapp.com/options" pattern="(https?://.+).{3,}">
-                                                <div class="invalid-feedback">Valid background request URL (including
-                                                    "http://" or "https://") is required.</div>
-                                                <div class="text-secondary small">Optional. If not supplied Trigger URL
-                                                    will be used as Background request URL.</div>
+                                                <label for="loop_uri" class="pt-3 mb-0">后台请求 URL： <span class="badge rounded-pill text-bg-info">可选</span></label>
+                                                <input type="url" class="form-control" id="loop_uri" placeholder="可选的后台请求 URL。例如：https://myapp.com/options" pattern="(https?://.+).{3,}">
+                                                <div class="invalid-feedback">有效的后台请求 URL（包含
+                                                    "http://" 或 "https://"）是必需的。</div>
+                                                <div class="text-secondary small">可选。如果未提供，触发 URL
+                                                    将被用作后台请求 URL。</div>
 
-                                                <label for="loop_interval" class="pt-3 mb-0">Request Interval (in
-                                                    minutes):</label>
-                                                <input type="number" class="form-control" id="loop_interval" required="required" placeholder="Request Interval" maxlength="3" min="1" max="999">
-                                                <div class="invalid-feedback">Valid Request Interval (in minutes) is
-                                                    required.</div>
-                                                <div class="text-secondary small">Request interval for the background
-                                                    request loop. Minimum 1 minute and whole numbers only.</div>
+                                                <label for="loop_interval" class="pt-3 mb-0">请求间隔（分钟）：</label>
+                                                <input type="number" class="form-control" id="loop_interval" required="required" placeholder="请求间隔" maxlength="3" min="1" max="999">
+                                                <div class="invalid-feedback">有效的请求间隔（分钟）
+                                                    是必需的。</div>
+                                                <div class="text-secondary small">后台请求循环的请求间隔。最少 1 分钟，仅限整数。</div>
                                                 <div class="input-group pt-3 mb-0">
                                                     <div class="input-group-text">
                                                         <input type="checkbox" id="loop_exit_200">
                                                     </div>
-                                                    <div class="form-control"> Stop Background Request when server
-                                                        response is not 200 OK.</div>
+                                                    <div class="form-control"> 当服务器响应不是 200 OK 时停止后台请求。</div>
                                                 </div>
-                                                <div class="text-secondary text-justify small">The response from server
-                                                    may indicate that the session is already expired.</div>
+                                                <div class="text-secondary text-justify small">服务器响应
+                                                    可能表明会话已过期。</div>
                                                 <div class="input-group pt-3 mb-0">
                                                     <div class="input-group-text">
                                                         <input type="checkbox" id="bg_head_only">
                                                     </div>
-                                                    <div class="form-control"> Request Page header information (HEAD
-                                                        Request) only.</div>
+                                                    <div class="form-control"> 仅请求页面标头信息（HEAD 请求）。</div>
                                                 </div>
-                                                <div class="text-secondary text-justify small">Enable this if JavaScript
-                                                    executed from background requests are interfering with the page.
-                                                </div>
+                                                <div class="text-secondary text-justify small">如果从后台请求执行的 JavaScript
+                                                    干扰了页面，请启用此选项。</div>
                                             </div>
                                         </div>
                                     </div>
@@ -157,45 +151,37 @@
                                     <div class="accordion-item">
                                         <div class="accordion-header">
                                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
-                                                <span class="badge rounded-pill text-bg-info me-2">Optional</span>
-                                                Foreground Request Options
+                                                <span class="badge rounded-pill text-bg-info me-2">可选</span>
+                                                前台请求选项
                                             </button>
                                         </div>
                                         <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionForeground">
                                             <div class="accordion-body">
-                                                <label for="fg_trigger_uri" class="mb-0">Foreground Auto-Reload Trigger
-                                                    URL:</label>
-                                                <input type="url" class="form-control" id="fg_trigger_uri" placeholder="Foreground Auto-Reload Trigger URL. eg: https://example.com/user/" pattern="https?://.+">
-                                                <div id="fgTriggerUriFb" class="invalid-feedback">Valid trigger URL
-                                                    (including "http://" or "https://") is required.</div>
-                                                <div class="text-secondary text-justify small">Some websites implement a
-                                                    JavaScript idle timer. For these websites, requesting the page in
-                                                    the background will not be enough to keep the session alive. The
-                                                    page needs to reload to keep the session. Navigating to a any URL
-                                                    starting with the Trigger URL will start the foreground page reload
-                                                    loop. For example Trigger URL is set to
-                                                    <code>https://example.com/user/</code>, navigating to
-                                                    <code>https://example.com/user/profile</code> or
-                                                    <code>https://example.com/user/account/details</code> will set to
-                                                    auto reload in the set interval
-                                                </div>
+                                                <label for="fg_trigger_uri" class="mb-0">前台自动重载触发 URL：</label>
+                                                <input type="url" class="form-control" id="fg_trigger_uri" placeholder="前台自动重载触发 URL。例如：https://example.com/user/" pattern="https?://.+">
+                                                <div id="fgTriggerUriFb" class="invalid-feedback">有效的触发 URL
+                                                    （包含 "http://" 或 "https://"）是必需的。</div>
+                                                <div class="text-secondary text-justify small">某些网站实现了
+                                                    JavaScript 空闲计时器。对于这些网站，在后台请求页面
+                                                    不足以保持会话活跃。页面需要重载以保持会话。导航到任何以触发 URL 开头的 URL
+                                                    将启动前台页面重载循环。例如，触发 URL 设置为
+                                                    <code>https://example.com/user/</code>，导航到
+                                                    <code>https://example.com/user/profile</code> 或
+                                                    <code>https://example.com/user/account/details</code> 将设置为
+                                                    按设定间隔自动重载。</div>
 
-                                                <label for="fg_interval" class="pt-3 mb-0">Foreground Auto-Reload
-                                                    Interval (in minutes):</label>
-                                                <input type="number" class="form-control" id="fg_interval" placeholder="Foreground Auto-Reload Interval" maxlength="3" min="1" max="999">
-                                                <div class="invalid-feedback">Valid Foreground Auto-Reload Interval (in
-                                                    minutes) is required.</div>
-                                                <div class="text-secondary small">Foreground Auto-Reload interval for
-                                                    the foreground auto-reload loop. Minimum 1 minute and whole numbers
-                                                    only.</div>
+                                                <label for="fg_interval" class="pt-3 mb-0">前台自动重载间隔（分钟）：</label>
+                                                <input type="number" class="form-control" id="fg_interval" placeholder="前台自动重载间隔" maxlength="3" min="1" max="999">
+                                                <div class="invalid-feedback">有效的前台自动重载间隔（分钟）
+                                                    是必需的。</div>
+                                                <div class="text-secondary small">前台自动重载循环的间隔。最少 1 分钟，仅限整数。</div>
 
                                                 <div class="input-group pt-3">
                                                     <div class="input-group-text">
                                                         <input type="checkbox" id="fg_reload_sound">
                                                     </div>
-                                                    <div class="form-control"> Play beep sound before reloading page.
-                                                    </div>
-                                                    <button type="button" class="input-group-text btn btn-info btn-sm" id="sound_test"><img src="../assets/settings/play-16.svg" width="24px" height="24px"> Test</button>
+                                                    <div class="form-control"> 重载页面前播放提示音。</div>
+                                                    <button type="button" class="input-group-text btn btn-info btn-sm" id="sound_test"><img src="../assets/settings/play-16.svg" width="24px" height="24px"> 测试</button>
                                                     <audio id="sound_element">
                                                         <source src="../beep.wav" type="audio/wav">
                                                     </audio>
@@ -208,50 +194,46 @@
                                     <div class="accordion-item">
                                         <div class="accordion-header">
                                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
-                                                <span class="badge rounded-pill text-bg-info me-2">Optional</span>
-                                                Notification Options
+                                                <span class="badge rounded-pill text-bg-info me-2">可选</span>
+                                                通知选项
                                             </button>
                                         </div>
                                         <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionNotifications">
                                             <div class="accordion-body">
                                                 <div>
-                                                    <p>Display a browser notification when&hellip;</p>
+                                                    <p>在以下情况显示浏览器通知：</p>
                                                 </div>
                                                 <div class="input-group">
                                                     <div class="input-group-text">
                                                         <input type="checkbox" id="notif_bgrequest">
                                                     </div>
-                                                    <div class="form-control"> Background Page request successful to
-                                                        keep session alive.</div>
+                                                    <div class="form-control"> 后台页面请求成功以保持会话活跃。</div>
                                                 </div>
                                                 <div class="input-group pt-3">
                                                     <div class="input-group-text">
                                                         <input type="checkbox" id="notif_bgexit">
                                                     </div>
-                                                    <div class="form-control"> Background Request is stopped because
-                                                        server response is not 200.</div>
+                                                    <div class="form-control"> 后台请求因服务器响应不是 200 而停止。</div>
                                                 </div>
                                                 <div class="input-group pt-3">
                                                     <div class="input-group-text">
                                                         <input type="checkbox" id="notif_fgreload">
                                                     </div>
-                                                    <div class="form-control"> Page is auto-reloading to keep session
-                                                        alive.</div>
+                                                    <div class="form-control"> 页面正在自动重载以保持会话活跃。</div>
                                                 </div>
                                                 <div class="input-group pt-3">
                                                     <div class="input-group-text">
                                                         <input type="checkbox" id="notif_fgexit">
                                                     </div>
-                                                    <div class="form-control"> Foreground Page auto-reload stopped.
-                                                    </div>
+                                                    <div class="form-control"> 前台页面自动重载已停止。</div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                                <button type="submit" class="btn btn-primary" id="submitButton">Add Rule</button>
-                                <button type="button" class="btn btn-danger" id="deleteButton" style="display: none;">Delete Rule</button>
-                                <button type="button" class="btn btn-secondary" id="cancelButton">Cancel</button>
+                                <button type="submit" class="btn btn-primary" id="submitButton">添加规则</button>
+                                <button type="button" class="btn btn-danger" id="deleteButton" style="display: none;">删除规则</button>
+                                <button type="button" class="btn btn-secondary" id="cancelButton">取消</button>
                             </form>
                         </div>
                     </div>
@@ -259,31 +241,30 @@
                 <!-- Info Card -->
                 <div class="col-lg-4">
                     <div class="card info-card mb-2">
-                        <div class="card-header text-center"><strong>Rules Import/ Export</strong></div>
+                        <div class="card-header text-center"><strong>规则导入/导出</strong></div>
                         <div class="card-body">
                             <p class="card-text">
-                                To import rules, click Import Rules. Select a valid <code>.json</code> file to
-                                import.</br>
-                                To export rules, click Export Rules. Exported data is downloaded as a file with
-                                extension <code>.json</code>.
+                                要导入规则，点击导入规则。选择一个有效的 <code>.json</code> 文件
+                                进行导入。</br>
+                                要导出规则，点击导出规则。导出的数据将下载为扩展名为 <code>.json</code> 的文件。
                             </p>
                             <div class="row">
                                 <div class="col-sm-6">
                                     <input type="file" id="fileElem" accept=".json" style="display:none" />
-                                    <button class="btn btn-danger float-start" type="button" id="import_rules_json">Import Rules</button>
+                                    <button class="btn btn-danger float-start" type="button" id="import_rules_json">导入规则</button>
                                 </div>
                                 <div class="col-sm-6">
-                                    <button class="btn btn-primary float-end" type="button" id="export_rules_json">Export Rules</button>
+                                    <button class="btn btn-primary float-end" type="button" id="export_rules_json">导出规则</button>
                                 </div>
                                 <fieldset class="col-sm-11 border mx-auto p-2">
-                                    <legend class="col-form-label float-none w-auto">Import type:&nbsp;</legend>
+                                    <legend class="col-form-label float-none w-auto">导入类型：</legend>
                                     <div class="form-check form-check-inline">
                                         <input class="form-check-input" type="radio" name="importType" id="import_replace" value="option1" checked>
-                                        <label class="form-check-label" for="import_replace"> Replace </label>
+                                        <label class="form-check-label" for="import_replace"> 替换 </label>
                                     </div>
                                     <div class="form-check form-check-inline">
                                         <input class="form-check-input" type="radio" name="importType" id="import_append" value="option2">
-                                        <label class="form-check-label" for="import_append"> Append </label>
+                                        <label class="form-check-label" for="import_append"> 追加 </label>
                                     </div>
                                 </fieldset>
                             </div>
@@ -291,20 +272,18 @@
                     </div>
 
                     <div class="card info-card mb-2">
-                        <div class="card-header text-center"><strong>Release Notes</strong></div>
+                        <div class="card-header text-center"><strong>发布说明</strong></div>
                         <div class="card-body">
                             <ul class="list-unstyled">
                                 <li><strong>2.4</strong>
                                     <ul class="list-unstyled">
-                                        <li><strong>New Feature:</strong> Dark Theme - Automatically adapts to your
-                                            system's appearance settings. </li>
-                                        <li><strong>Improvement:</strong> Automatically generates rule name based on
-                                            the page title.</li>
-                                        <li><strong>Upgrade:</strong> Bootstrap updated to the latest version. </li>
-                                        <li><strong>Improvement:</strong> Improved overall performance. </li>
-                                        <li><strong>Improvement:</strong> Add Swedish (sv) language. Thank you 
-                                            <a href="https://github.com/Sopor" target="_blank" class="text-info">Sopor</a> for your 
-                                            <a href="https://github.com/arunelias/session-alive/pull/44" target="_blank" class="text-info">support.</a>
+                                        <li><strong>新功能：</strong> 深色主题 - 自动适应您系统的外观设置。</li>
+                                        <li><strong>改进：</strong> 根据页面标题自动生成规则名称。</li>
+                                        <li><strong>升级：</strong> Bootstrap 更新到最新版本。</li>
+                                        <li><strong>改进：</strong> 改进了整体性能。</li>
+                                        <li><strong>改进：</strong> 添加瑞典语。感谢
+                                            <a href="https://github.com/Sopor" target="_blank" class="text-info">Sopor</a> 的
+                                            <a href="https://github.com/arunelias/session-alive/pull/44" target="_blank" class="text-info">支持。</a>
                                         </li>
                                     </ul>
                                 </li>
@@ -313,21 +292,19 @@
                     </div>
 
                     <div class="card info-card mb-2">
-                        <div class="card-header text-center"><strong>About</strong></div>
+                        <div class="card-header text-center"><strong>关于</strong></div>
                         <div class="card-body">
                             <p class="text-justify">
-                                Session Alive extension is Open Source. Please rate the extension if you like it.<br>
-                                This extension does not collect any user information or data. Please read the Privacy
-                                Policy for more details.<br>
-                                If you want to contribute to this project or report an issue please visit the below
-                                GitHub page
+                                Session Alive 扩展是开源的。如果您喜欢它，请为扩展评分。<br>
+                                此扩展不会收集任何用户信息或数据。请阅读隐私政策了解更多详情。<br>
+                                如果您想为项目做出贡献或报告问题，请访问以下 GitHub 页面
                             </p>
-                            <a href="https://chromewebstore.google.com/detail/session-alive/aodfoiacnmepndhojccepdcpmehjbham/reviews" class="card-link text-info" title="How are you enjoying Session Alive? Rate your experience!"><span class="Icon Icon-star-yellow"></span></a>
-                            <a href="/views/installed.html" class="card-link text-info" title="Help"><span class="icon-help"></span></a>
-                            <a href="https://github.com/arunelias/session-alive" class="card-link text-info" title="Support Site">GitHub</a>
-                            <a href="https://docs.google.com/forms/d/e/1FAIpQLSf9gdcJycSTzriZZDWDKcW3JKd8h0dSkO8guvx1LRSAF2LzDQ/viewform?usp=sf_link" class="card-link text-info" title="Help me improve Session Alive by leaving feedback">Feedback</a>
-                            <a href="https://chromewebstore.google.com/detail/session-alive/aodfoiacnmepndhojccepdcpmehjbham/privacy" class="card-link text-info" title="Read the privacy policy for this add-on">Privacy
-                                Policy</a>
+                            <a href="https://chromewebstore.google.com/detail/session-alive/aodfoiacnmepndhojccepdcpmehjbham/reviews" class="card-link text-info" title="您对 Session Alive 感觉如何？为您的体验评分！"><span class="Icon Icon-star-yellow"></span></a>
+                            <a href="/views/installed.html" class="card-link text-info" title="帮助"><span class="icon-help"></span></a>
+                            <a href="https://github.com/arunelias/session-alive" class="card-link text-info" title="支持网站">GitHub</a>
+                            <a href="https://docs.google.com/forms/d/e/1FAIpQLSf9gdcJycSTzriZZDWDKcW3JKd8h0dSkO8guvx1LRSAF2LzDQ/viewform?usp=sf_link" class="card-link text-info" title="通过留下反馈帮助我改进 Session Alive">反馈</a>
+                            <a href="https://chromewebstore.google.com/detail/session-alive/aodfoiacnmepndhojccepdcpmehjbham/privacy" class="card-link text-info" title="阅读此附加组件的隐私政策">隐私
+                                政策</a>
                         </div>
                         <div class="card-footer text-end">&copy; Arun Elias - 2025</div>
                     </div>
